@@ -42,7 +42,6 @@ p {
 
 .header {
   background: var(--WHITE, #fff);
-  padding: 24px 0;
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
 .header-naviggation {
@@ -53,6 +52,7 @@ p {
 .header-container {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 .header-logo {
   margin-right: 76px;
@@ -350,7 +350,6 @@ portfolio-container {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  margin-bottom: 16px;
 }
 .footer-logo-link {
   color: #f4f4fd;
