@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -6,6 +11,7 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 a {
@@ -17,15 +23,40 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
   margin: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1158px;
+  align-items: center;
 }
 
 /* Header */
 
 .header {
   background: var(--WHITE, #fff);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
 .header-naviggation {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 36px;
 }
 
 .header-logo-item {
@@ -51,6 +82,8 @@ h6 {
 }
 
 .header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 .header-menu-item {
 }
@@ -73,6 +106,10 @@ h6 {
   font-style: normal;
 }
 .header-address-list {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  gap: 40px;
 }
 .header-address-item {
 }
@@ -93,18 +130,26 @@ h6 {
 
 /* Hero */
 
+.hero-container {
+}
+
 .main {
 }
 .hero {
   background-color: #2e2f42;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 .hero-title {
   color: var(--WHITE, #fff);
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding-bottom: 42px;
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto;
 }
 .hero-buy-btn {
   background: var(--IRIS, #4d5ae5);
@@ -115,6 +160,13 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  text-align: center;
+  margin: auto;
+  display: block;
 }
 .hero-buy-btn:hover {
   background: var(--OCEAN, #404bbf);
@@ -127,12 +179,17 @@ h6 {
 
 .advantages {
   background: #fff;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .advantages-title {
 }
 .advantages-list {
+  display: flex;
+  gap: 24px;
 }
 .advantages-list-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 .advantages-list-item-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -152,6 +209,10 @@ h6 {
 
 .team {
   background: var(--CLOUD, #f4f4fd);
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.team-container {
 }
 .team-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -161,11 +222,20 @@ h6 {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-list-item {
   background-color: #ffffff;
+  width: calc((100% - 24px * 3) / 4);
+  padding-bottom: 32px;
+  justify-content: center;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
 }
 .team-list-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -173,20 +243,32 @@ h6 {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
+  padding-top: 32px;
 }
 .team-list-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .team-list-text {
   color: var(--SLATE, #434455);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* Portfolio */
 
 .portfolio {
   background: #fff;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+portfolio-container {
+  display: flex;
 }
 .portfolio-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -195,13 +277,27 @@ h6 {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
+  text-align: center;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-list-item {
   background-color: #ffffff;
+  width: calc((100% - 24px * 3) / 4);
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  flex-basis: 30%;
+  flex-shrink: 0;
 }
+
 .portfolio-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .portfolio-item-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -209,18 +305,22 @@ h6 {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  padding-top: 32px;
 }
 .portfolio-item-text {
   color: var(--SLATE, #434455);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32;
 }
 
 /* Footer */
 
 .footer {
   background: var(--NAVY-BLUE, #2e2f42);
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 .footer-link {
   color: #4d5ae5;
