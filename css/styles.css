@@ -35,7 +35,6 @@ p {
   padding: 0 15px;
   margin: 0 auto;
   max-width: 1158px;
-  align-items: center;
 }
 
 /* Header */
@@ -352,6 +351,7 @@ portfolio-container {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo-link {
   color: #f4f4fd;
