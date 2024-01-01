@@ -226,6 +226,7 @@ p {
   padding-top: 120px;
 }
 .team-container {
+  display: flex;
 }
 .team-title {
   color: var(--NAVY-BLUE, #2e2f42);
