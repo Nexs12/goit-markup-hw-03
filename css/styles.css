@@ -11,6 +11,7 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 a {
@@ -195,7 +196,6 @@ p {
 .advantages-list {
   display: flex;
   gap: 24px;
-  margin: 0 auto;
 }
 .advantages-list-item {
   flex-basis: calc((100% - 72px) / 4);
@@ -238,7 +238,6 @@ p {
 .team-list {
   display: flex;
   gap: 24px;
-  margin: 0 auto;
 }
 .team-list-item {
   background-color: #ffffff;
@@ -307,7 +306,6 @@ portfolio-container {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  margin: 0 auto;
 }
 .portfolio-list-item {
   background-color: #ffffff;
