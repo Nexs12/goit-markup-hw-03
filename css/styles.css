@@ -107,7 +107,6 @@ p {
 .header-address-list {
   display: flex;
   margin-right: auto;
-  align-items: center;
   gap: 40px;
 }
 .header-address-item {
@@ -125,6 +124,8 @@ p {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: inline-block;
+  padding: 24px 0;
 }
 
 /* Hero */
