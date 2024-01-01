@@ -99,6 +99,7 @@ p {
   letter-spacing: 0.02em;
   text-decoration: none;
   padding: 24px 0;
+  display: inline-block;
 }
 .headder-address {
   font-style: normal;
