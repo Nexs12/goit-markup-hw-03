@@ -183,8 +183,17 @@ p {
   padding-bottom: 120px;
   padding-top: 120px;
 }
-.advantages-title {
-  visibility: hidden;
+.visualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advantages-list {
   display: flex;
@@ -343,7 +352,6 @@ portfolio-container {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  margin-bottom: 16px;
 }
 .footer-logo-link {
   color: #f4f4fd;
